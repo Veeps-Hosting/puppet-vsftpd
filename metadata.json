@@ -1,19 +1,14 @@
 {
-  "name": "aneesh-vsftpd",
-  "version": "6.0.0",
-  "author": "aneesh",
+  "name": "veepshosting-vsftpd",
+  "version": "8.0.0",
+  "author": "forked from https://github.com/aneesh-c/puppet-vsftpd",
   "summary": "Puppet module for vsftpd",
   "license": "Apache-2.0",
-  "source": "https://github.com/aneesh-c/puppet-vsftpd",
-  "project_page": "https://github.com/aneesh-c/puppet-vsftpd",
-  "issues_url": "https://github.com/aneesh-c/puppet-vsftpd/issues",
+  "source": "https://github.com/Veeps-Hosting/puppet-vsftpd",
+  "project_page": "https://github.com/Veeps-Hosting/puppet-vsftpd",
+  "issues_url": "https://github.com/Veeps-Hosting/puppet-vsftpd",
   "dependencies": [
-  
-  ],
-  "data_provider": null,
-  "tags": [
-    "vsftpd",
-    "ftp"
+
   ],
   "operatingsystem_support": [
     {
@@ -35,7 +30,8 @@
       "operatingsystemrelease": [
         "14.04",
         "16.04",
-        "18.04"
+        "18.04",
+        "20.04"
       ]
     },
     {
@@ -46,5 +42,18 @@
         "9"
       ]
     }
-  ]
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.10.0 < 8.0.0"
+    }
+  ],
+  "tags": [
+    "vsftpd",
+    "ftp"
+  ],
+  "pdk-version": "1.18.1",
+  "template-url": "pdk-default#1.18.1",
+  "template-ref": "tags/1.18.1-0-g3d2e75c"
 }
